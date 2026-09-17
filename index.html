@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tidalis Production & Oceana | Operational & Creative Excellence</title>
+    <title>กำลังดำเนินการ | Tidalis Production & Oceana</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -24,139 +24,91 @@
                 }
             }
         }
-    >
+    </script>
     <!-- Google Fonts & Lucide Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body { font-family: 'Plus Jakarta Sans', 'Prompt', sans-serif; }
         .hero-glow {
-            background: radial-gradient(circle at 50% 30%, rgba(56, 189, 248, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+            background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.12) 0%, rgba(15, 23, 42, 0) 70%);
+        }
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(0.98); }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 3s ease-in-out infinite;
         }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-slate-950">
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-slate-950 min-h-screen flex flex-col justify-between hero-glow">
 
-    <!-- Navbar -->
-    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/70 border-b border-slate-800/60">
-        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-400 to-blue-600 flex items-center justify-center font-bold text-slate-950 text-xl shadow-lg shadow-sky-500/20">
-                    T&O
-                </div>
-                <div>
-                    <span class="font-bold text-lg tracking-tight block leading-none">Tidalis <span class="text-sky-400">&</span> Oceana</span>
-                    <span class="text-[10px] text-slate-400 tracking-widest uppercase">Production & Operations</span>
-                </div>
+    <!-- Top Branding / Minimal Nav -->
+    <div class="max-w-6xl w-full mx-auto px-6 h-20 flex items-center justify-between border-b border-slate-900/60">
+        <div class="flex items-center space-x-3">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-sky-400 to-blue-600 flex items-center justify-center font-bold text-slate-950 text-base shadow-lg shadow-sky-500/20">
+                T&O
             </div>
-            <div class="hidden md:flex items-center space-x-8 text-sm text-slate-300">
-                <a href="#about" class="hover:text-sky-400 transition">About</a>
-                <a href="#services" class="hover:text-sky-400 transition">Services</a>
-                <a href="#ecosystem" class="hover:text-sky-400 transition">Ecosystem</a>
-                <a href="#contact" class="px-5 py-2.5 rounded-full bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold transition shadow-lg shadow-sky-500/20">Contact Us</a>
+            <div>
+                <span class="font-bold text-base tracking-tight block leading-none">Tidalis <span class="text-sky-400">&</span> Oceana</span>
             </div>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden hero-glow">
-        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
-            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 text-sky-400 text-xs font-medium mb-6">
-                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
-                <span>คณะบุคคลผู้ขับเคลื่อนงานสร้างสรรค์และระบบปฏิบัติการดิจิทัล</span>
-            </div>
-            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-                Navigating Creative <br class="hidden sm:inline">
-                <span class="bg-gradient-to-r from-sky-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent">& Operational Depths</span>
-            </h1>
-            <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto mb-10 font-light leading-relaxed">
-                การผสานพลังระหว่าง <strong class="text-slate-200 font-medium">Tidalis Production</strong> (งานสร้างสรรค์/สื่อมีเดีย) และ <strong class="text-slate-200 font-medium">Oceana</strong> (ระบบบริหารจัดการและโครงสร้างพื้นฐานดิจิทัล) สู่โซลูชันที่ไร้รอยต่อ
-            </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold transition flex items-center justify-center space-x-2 shadow-xl shadow-sky-500/25">
-                    <span>เริ่มต้นโปรเจกต์ของคุณ</span>
-                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-                <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 font-medium transition flex items-center justify-center">
-                    สำรวจบริการ
-                </a>
-            </div>
+        <div class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-medium">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+            <span>System Updating</span>
         </div>
-    </header>
+    </div>
 
-    <!-- Services / Pillars -->
-    <section id="services" class="py-24 bg-slate-950 border-t border-slate-900">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-xs font-bold text-sky-400 tracking-widest uppercase mb-3">Core Pillars</h2>
-                <p class="text-3xl font-bold tracking-tight">พลังขับเคลื่อนคู่ขนาน</p>
+    <!-- Main Content -->
+    <main class="max-w-xl mx-auto px-6 py-16 text-center">
+        <div class="animate-pulse-slow inline-flex w-20 h-20 rounded-2xl bg-sky-500/10 border border-sky-500/20 text-sky-400 items-center justify-center mb-8 shadow-2xl shadow-sky-500/10">
+            <i data-lucide="cpu" class="w-10 h-10"></i>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4">
+            กำลังดำเนินการปรับปรุงระบบ
+        </h1>
+        <p class="text-slate-400 text-base font-light leading-relaxed mb-8">
+            ขณะนี้ทีมงาน <strong class="text-slate-200 font-medium">Tidalis Production & Oceana</strong> กำลังยกระดับโครงสร้างพื้นฐานและอัปเดตฟังก์ชันเพื่อประสิทธิภาพที่ดีกว่าเดิม
+        </p>
+
+        <!-- Progress / Status Card -->
+        <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800/80 text-left mb-10 space-y-4 shadow-xl">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+                <span>สถานะกระบวนการ (Processing Status)</span>
+                <span class="text-sky-400 font-semibold">In Progress (75%)</span>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Tidalis Production -->
-                <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800/80 hover:border-sky-500/40 transition group">
-                    <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i data-lucide="video" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-3">Tidalis Production</h3>
-                    <p class="text-slate-400 leading-relaxed font-light mb-6">
-                        สร้างสรรค์ผลงานสื่อโฆษณา คอนเทนต์ วิดีโอ และงานโปรดักชันคุณภาพสูง ครอบคลุมทุกมิติการสื่อสารแบรนด์ให้โดดเด่นและทรงพลัง
-                    </p>
-                    <ul class="space-y-2 text-sm text-slate-300">
-                        <li class="flex items-center space-x-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-400"></i><span>Commercial & Media Production</span></li>
-                        <li class="flex items-center space-x-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-sky-400"></i><span>Creative Direction & Storytelling</span></li>
-                    </ul>
+            <!-- Progress Bar -->
+            <div class="w-full h-2 bg-slate-950 rounded-full overflow-hidden border border-slate-800">
+                <div class="bg-gradient-to-r from-sky-400 to-blue-500 h-full rounded-full w-3/4 transition-all duration-500">
                 </div>
-
-                <!-- Oceana Operations -->
-                <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800/80 hover:border-sky-500/40 transition group">
-                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i data-lucide="globe" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-3">Oceana Operations</h3>
-                    <p class="text-slate-400 leading-relaxed font-light mb-6">
-                        ระบบจัดการเบื้องหลัง โครงสร้างพื้นฐานดิจิทัล การดูแลคอมมูนิตี้ ระบบไอที และการบริหารจัดการองค์กรที่มีเสถียรภาพ
-                    </p>
-                    <ul class="space-y-2 text-sm text-slate-300">
-                        <li class="flex items-center space-x-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400"></i><span>Digital Infrastructure & DNS/Hosting</span></li>
-                        <li class="flex items-center space-x-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400"></i><span>Community & Operation Management</span></li>
-                    </ul>
+            </div>
+            <div class="grid grid-cols-2 gap-3 pt-2 text-xs text-slate-300">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+                    <span>Infrastructure Sync</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="loader-2" class="w-4 h-4 text-sky-400 animate-spin"></i>
+                    <span>DNS / Routing Optimization</span>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-slate-900/30 border-t border-slate-900">
-        <div class="max-w-xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-4">ร่วมงานกับเรา</h2>
-            <p class="text-slate-400 text-sm mb-10 font-light">
-                สนใจให้เราดูแลงานโปรดักชัน หรือปรึกษาด้านระบบปฏิบัติการและดิจิทัลลุยไปพร้อมกัน
-            </p>
-            <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 text-left">
-                <div class="space-y-4">
-                    <div>
-                        <label class="block text-xs font-medium text-slate-400 mb-1.5">ชื่อ-นามสกุล / แบรนด์</label>
-                        <input type="text" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-sky-500 transition" placeholder="ระบุชื่อของคุณ">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-medium text-slate-400 mb-1.5">อีเมลติดต่อ</label>
-                        <input type="email" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-sky-500 transition" placeholder="hello@example.com">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-medium text-slate-400 mb-1.5">รายละเอียดโปรเจกต์</label>
-                        <textarea rows="4" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-sky-500 transition" placeholder="เล่าสิ่งที่คุณต้องการให้เราช่วย..."></textarea>
-                    </div>
-                    <button type="button" onclick="alert('ส่งข้อความเรียบร้อย (ตัวอย่างเดโม)');" class="w-full py-3.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold transition shadow-lg shadow-sky-500/20">
-                        ส่งข้อความหาทีมงาน
-                    </button>
-                </div>
-            </div>
+        <!-- Quick Contact / Emergency Note -->
+        <div class="text-xs text-slate-500 space-y-2">
+            <p>ต้องการติดต่อเร่งด่วนเกี่ยวกับโปรเจกต์?</p>
+            <a href="mailto:contact@oceana.operation" class="inline-flex items-center space-x-1.5 text-sky-400 hover:text-sky-300 transition font-medium">
+                <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                <span>contact@oceana.operation</span>
+            </a>
         </div>
-    </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="py-10 border-t border-slate-900 bg-slate-950 text-center text-xs text-slate-500">
-        <p>&copy; 2026 Tidalis Production & Oceana. Powered by Vercel.</p>
+    <footer class="py-8 border-t border-slate-900/60 bg-slate-950 text-center text-xs text-slate-600">
+        <p>&copy; 2026 Tidalis Production & Oceana. All rights reserved.</p>
     </footer>
 
     <!-- Initialize Lucide Icons -->
